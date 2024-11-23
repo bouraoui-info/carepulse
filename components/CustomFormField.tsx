@@ -12,7 +12,7 @@ import { Control } from "react-hook-form";
 import { Input } from "./ui/input";
 import { FormFieldType } from "./forms/PatientForm";
 import Image from "next/image";
-import PhoneInput from "react-phone-number-input/input";
+import PhoneInput from "react-phone-number-input";
 import 'react-phone-number-input/style.css'
 interface CustomProps {
   control: Control<any>;
