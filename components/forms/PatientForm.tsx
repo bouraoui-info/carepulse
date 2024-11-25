@@ -3,15 +3,15 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { Button } from "@/components/ui/button";
 import { Form } from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
 import CustomFormField from "../CustomFormField";
 import SubmitButton from "../SubmitButton";
 import { useState } from "react";
 import { UserFormValidation } from "@/lib/validation";
 import { useRouter } from "next/navigation";
 import { createUser } from "@/lib/actions/patient.actions";
+import "react-phone-number-input/style.css";
+
 
 export enum FormFieldType {
   INPUT = "input",
@@ -22,6 +22,10 @@ export enum FormFieldType {
   RADIO = "radio",
   TEXTAREA = "textarea",
   PHONE_INPUT = "phoneInput",
+  DATE_PICKER = "datePicker",
+  SKELETON = "skeleton",
+  
+
 }
 
 export const PatientForm = () => {
